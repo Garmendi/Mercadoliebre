@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/home.html')
 
 })
-app.listen(3030, () => {
-    console.log('servidor funcionando')
+app.listen(process.env.PORT || 3000, function () {
+    console.log('servidor funcionando en el puerto 3000')
 })
 
